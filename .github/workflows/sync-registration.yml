@@ -14,4 +14,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.REG_PUSH }}
         run: |
-          git -c "http.https://github.com/.extraheader=AUTHORIZATION: bearer ${GH_TOKEN}" push https://github.com/miruikediyikeai/oceanbase-seekdb.git HEAD:refs/heads/2026-competition
+          git push "https://x-access-token:${GH_TOKEN}@github.com/miruikediyikeai/oceanbase-seekdb.git" HEAD:refs/heads/2026-competition
